@@ -32,3 +32,6 @@ node_modules/
 *.rar
 *.tar
 *.zip
+
+# Other
+.DS_Store
