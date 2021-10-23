@@ -4,7 +4,7 @@
   "description": "An eleventy, rollup and tailwind started project.",
   "main": "index.js",
   "scripts": {
-    "clean": "rimraf public",
+    "clean": "rimraf _public",
 
     "start:rollup": "rollup -c --watch",
     "start:eleventy": "eleventy --serve",
