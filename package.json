@@ -1,0 +1,46 @@
+{
+  "name": "jamstack-1",
+  "version": "1.0.0",
+  "description": "An eleventy, rollup and tailwind started project.",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf public",
+    "start:eleventy": "eleventy --serve",
+    "start": "ENV=DEVELOPMENT npm-run-all clean  --parallel start:*",
+
+    "build:eleventy": "eleventy",
+    "build": "ENV=PRODUCTION run-s clean  build:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moesmoesie/jamstack-1.git"
+  },
+  "keywords": [
+    "eleventy",
+    "rollup",
+    "tailwind"
+  ],
+  "author": "Mustafa Darwesh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moesmoesie/jamstack-1/issues"
+  },
+  "homepage": "https://github.com/moesmoesie/jamstack-1#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  },
+  "dependencies": {
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-node-resolve": "^13.0.6",
+    "autoprefixer": "^10.3.7",
+    "lit": "^2.0.2",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.3.11",
+    "postcss-import": "^14.0.2",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.58.0",
+    "rollup-plugin-postcss": "^4.0.1",
+    "rollup-plugin-terser": "^7.0.2",
+    "tailwindcss": "^2.2.17"
+  }
+}
