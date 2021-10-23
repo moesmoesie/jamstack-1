@@ -5,9 +5,12 @@
   "main": "index.js",
   "scripts": {
     "clean": "rimraf public",
+
+    "start:rollup": "rollup -c --watch",
     "start:eleventy": "eleventy --serve",
     "start": "ENV=DEVELOPMENT npm-run-all clean  --parallel start:*",
 
+    "build:rollup": "rollup -c",
     "build:eleventy": "eleventy",
     "build": "ENV=PRODUCTION run-s clean  build:*"
   },
